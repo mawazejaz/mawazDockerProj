@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mawaz:
+    image: ${DOCKER_REGISTRY-}mawaz
+    build:
+      context: .
+      dockerfile: mawaz\Dockerfile
